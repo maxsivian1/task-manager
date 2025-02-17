@@ -1,0 +1,11 @@
+.task-input-container {
+  width: fit-content;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.tasks-display-container {
+  width: fit-content;
+  margin: auto;
+  margin-top: 15px;
+}

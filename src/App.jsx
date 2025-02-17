@@ -73,3 +73,37 @@ function App() {
 }
 
 export default App
+
+
+
+
+// const router = createHashRouter([
+//   {
+//     path: '/',
+//     element: <Layout />,
+//     children: [
+//       {
+//         index: true,
+//         element: (
+//           <>
+//             <div className="task-input-container">
+//               <TaskInputContainer />
+//             </div>
+//             <div className="tasks-display-container">
+//               <TasksDisplayContainer />
+//             </div>
+//             <ToTopButton />
+//             <UpdateTaskPopUp />
+//           </>
+//         ),
+//       },
+//       {
+//         path: 'about',
+//         element: (
+//           <About />
+//         ),
+//       },
+//     ],
+//   },
+// ],
+// );

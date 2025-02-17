@@ -10,7 +10,7 @@ import ToTopButton from './components/ToTopButton';
 // import TasksDisplayContainer from './components/TasksDisplayContainer'
 // import UpdateTaskPopUp from './components/UpdateTaskPopUp'
 
-import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
+import { createHashRouter, Outlet, RouterProvider } from 'react-router-dom'
 import { Suspense, lazy } from 'react';
 
 
@@ -33,13 +33,13 @@ function Layout() {
 
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       element: <Layout />,
       children: [
         {
-          path: '/',
+          index: true,
           element: (
             <>
               <div className="task-input-container">
@@ -54,7 +54,7 @@ function App() {
           ),
         },
         {
-          path: '/about',
+          path: 'about',
           element: (
             <About />
           ),

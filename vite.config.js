@@ -8,5 +8,5 @@ export default defineConfig({
     host: '192.168.29.180', 
     port: 5173,      
   },
-  // base: '/task-manager-hr/', 
+  base: '/task-manager-hr/', 
 })

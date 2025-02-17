@@ -62,7 +62,7 @@ function App() {
       ],
     },
   ],
-  { basename: '/task-manager-hr/' }
+  { basename: '/task-manager/' }
 );
 
   return (

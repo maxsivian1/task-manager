@@ -10,7 +10,7 @@ import ToTopButton from './components/ToTopButton';
 // import TasksDisplayContainer from './components/TasksDisplayContainer'
 // import UpdateTaskPopUp from './components/UpdateTaskPopUp'
 
-import { createHashRouter, Outlet, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import { Suspense, lazy } from 'react';
 
 
@@ -33,7 +33,7 @@ function Layout() {
 
 
 function App() {
-  const router = createHashRouter([
+  const router = createBrowserRouter([
     {
       path: '/',
       element: <Layout />,
@@ -61,7 +61,9 @@ function App() {
         },
       ],
     },
-  ]);
+  ],
+  { basename: '/task-manager-hr' }
+);
 
   return (
     <>

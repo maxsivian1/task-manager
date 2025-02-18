@@ -3,12 +3,12 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import Loading from './components/Loading';
-import ToTopButton from './components/ToTopButton';
 
 // import About from './components/About'
 // import TaskInputContainer from './components/TaskInputContainer'
 // import TasksDisplayContainer from './components/TasksDisplayContainer'
 // import UpdateTaskPopUp from './components/UpdateTaskPopUp'
+// import ToTopButton from './components/ToTopButton';
 
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import { Suspense, lazy } from 'react';
@@ -18,6 +18,8 @@ const About = lazy(() => import('./components/About'));
 const TaskInputContainer = lazy(() => import('./components/TaskInputContainer'));
 const TasksDisplayContainer = lazy(() => import('./components/TasksDisplayContainer'));
 const UpdateTaskPopUp = lazy(() => import('./components/UpdateTaskPopUp'));
+const ToTopButton = lazy(() => import('./components/ToTopButton'));
+const NotFound = lazy(() => import('./components/NotFound'));
 
 
 function Layout() {
@@ -62,7 +64,7 @@ function App() {
         {
           path: '*',
           element: (
-            <div>NOT FOUND</div>
+            <NotFound/>
           ),
         },
       ],

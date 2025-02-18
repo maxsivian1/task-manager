@@ -59,6 +59,12 @@ function App() {
             <About />
           ),
         },
+        {
+          path: '*',
+          element: (
+            <div>NOT FOUND</div>
+          ),
+        },
       ],
     },
   ],
